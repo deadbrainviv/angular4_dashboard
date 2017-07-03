@@ -31,7 +31,7 @@ export class LoginComponent implements OnInit {
               localStorage.setItem('user', user.username);
               localStorage.setItem('pass', user.password);
               console.log('user logged in');
-              this.router.navigate(['/dashboard/+analytics'])
+              this.router.navigate(['/main/dashboard/+analytics'])
             },
             error => {
               console.log(error);

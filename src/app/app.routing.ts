@@ -10,7 +10,7 @@ import {ModuleWithProviders} from "@angular/core";
 
 export const routes: Routes = [
   {
-    path: '',
+    path: 'main',
     component: MainLayoutComponent,
     data: {pageTitle: 'Home'},
     children: [
@@ -86,7 +86,7 @@ export const routes: Routes = [
   },
 
   {path: 'auth', component: AuthLayoutComponent, loadChildren: 'app/+auth/auth.module#AuthModule'},
-
+  {path: '', redirectTo:'auth/login', pathMatch: 'full'},
   {path: '**', redirectTo: 'miscellaneous/error404'}
 
 ];
