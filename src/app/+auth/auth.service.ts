@@ -17,9 +17,9 @@ export class AuthService {
   login(userMeta): Observable<any> {
     let headers = new Headers({
       'Content-Type': 'application/json',
-      'Access-Control-Allow-Origin': 'http://198.199.119.233:3000',
+      'Access-Control-Allow-Origin': '*',
       'Access-Control-Allow-Methods': 'GET, POST, OPTIONS, PUT, PATCH, DELETE',
-      'Access-Control-Allow-Headers':'X-Requested-With, content-type',
+      'Access-Control-Allow-Headers':'X-Requested-With,Content-Type,Content-Length,Authorization',
       'Access-Control-Allow-Credentials': true
     });
     let options = new RequestOptions({ headers: headers });
@@ -46,9 +46,9 @@ export class AuthService {
   register(userMeta):Observable<any> {
     let headers = new Headers({
       'Content-Type': 'application/json',
-      'Access-Control-Allow-Origin': 'http://198.199.119.233:3000',
+      'Access-Control-Allow-Origin': '*',
       'Access-Control-Allow-Methods': 'GET, POST, OPTIONS, PUT, PATCH, DELETE',
-      'Access-Control-Allow-Headers':'X-Requested-With, content-type',
+      'Access-Control-Allow-Headers':'X-Requested-With,Content-Type,Content-Length,Authorization',
       'Access-Control-Allow-Credentials': true
     });
     let options = new RequestOptions({ headers: headers });
