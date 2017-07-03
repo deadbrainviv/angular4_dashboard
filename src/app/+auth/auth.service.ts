@@ -17,7 +17,7 @@ export class AuthService {
   login(userMeta): Observable<any> {
     let headers = new Headers({ 'Content-Type': 'application/json' });
     let options = new RequestOptions({ headers: headers });
-    return this.http.post('http://localhost:3000/', JSON.stringify(userMeta), options)
+    return this.http.post('http://198.199.119.233:3000/', JSON.stringify(userMeta), options)
         .map(res => {
           let body = res.json();
           return body.data || { };
@@ -40,7 +40,7 @@ export class AuthService {
   register(userMeta):Observable<any> {
     let headers = new Headers({ 'Content-Type': 'application/json' });
     let options = new RequestOptions({ headers: headers });
-    return this.http.post('http://localhost:3000/signup', JSON.stringify(userMeta), options)
+    return this.http.post('http://198.199.119.233:3000/signup', JSON.stringify(userMeta), options)
         .map(res => {
           let body = res.json();
           return body.data || { };
