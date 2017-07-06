@@ -28,8 +28,8 @@ export class LoginComponent implements OnInit {
     this.authService.login(userMeta)
         .subscribe(
             user => {
-              localStorage.setItem('user', user.username);
-              localStorage.setItem('pass', user.password);
+              localStorage.setItem('user', userMeta.user);
+              localStorage.setItem('pass', userMeta.pass);
               console.log('user logged in');
               this.router.navigate(['/main/dashboard/analytics'])
             },

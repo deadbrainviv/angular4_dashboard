@@ -13,6 +13,7 @@ export class HeaderComponent implements OnInit {
   }
 
   ngOnInit() {
+    $('#user-name').text(localStorage.getItem('username'));
   }
 
 

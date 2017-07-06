@@ -17,8 +17,10 @@ export class LoginInfoComponent implements OnInit {
   }
 
   ngOnInit() {
+    console.log(localStorage.getItem('user'));
     this.userService.getLoginInfo().subscribe(user => {
-      this.user = user
+      this.user = user;
+      this.user.username = localStorage.getItem('user');
     })
 
   }
