@@ -6,7 +6,7 @@ export const config: any = {
 
   menu_speed: 200,
 
-  smartSkin: "smart-style-5",
+  smartSkin: "smart-style-6",
 
 
   skins: [
@@ -74,7 +74,17 @@ export const config: any = {
       label: "Glass"
     },
 
-
+    {
+      name: "smart-style-6",
+      logo: "assets/img/logo.png",
+      skinBtnClass: "btn btn-xs btn-block txt-color-white margin-top-5",
+      // style: {
+      //   background: 'rgba(153, 179, 204, 0.2)',
+      //   border: '1px solid rgba(121, 161, 221, 0.8)',
+      //   color: '#17273D !important'
+      // },
+      // label: "Glass"
+    }
   ],
 
   GOOGLE_API_KEY: 'AIzaSyDd8YW8k_J-Jkti-W4QNk5dL8O_5_2QUWY',
