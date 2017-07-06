@@ -6,7 +6,7 @@ export const config: any = {
 
   menu_speed: 200,
 
-  smartSkin: "smart-style-0",
+  smartSkin: "smart-style-5",
 
 
   skins: [
@@ -64,7 +64,7 @@ export const config: any = {
 
     {
       name: "smart-style-5",
-      logo: "assets/img/logo-pale.png",
+      logo: "assets/img/logo.png",
       skinBtnClass: "btn btn-xs btn-block txt-color-white margin-top-5",
       style: {
         background: 'rgba(153, 179, 204, 0.2)',
